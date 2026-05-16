@@ -2,27 +2,280 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Git Command Learning App</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semantic HTML Practice</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:#222;
+      color:white;
+      padding:20px;
+      text-align:center;
+    }
+
+    nav{
+      background:#444;
+      padding:10px;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:20px;
+      justify-content:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    main{
+      display:flex;
+      gap:20px;
+      padding:20px;
+    }
+
+    article{
+      flex:3;
+      background:white;
+      padding:20px;
+      border-radius:10px;
+    }
+
+    aside{
+      flex:1;
+      background:#fff;
+      padding:20px;
+      border-radius:10px;
+    }
+
+    section{
+      margin-bottom:30px;
+    }
+
+    figure img{
+      width:100%;
+      border-radius:10px;
+    }
+
+    figcaption{
+      text-align:center;
+      margin-top:10px;
+      font-style:italic;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:20px;
+    }
+
+    table, th, td{
+      border:1px solid #999;
+    }
+
+    th, td{
+      padding:10px;
+      text-align:center;
+    }
+
+    details{
+      margin-top:20px;
+      background:#eee;
+      padding:10px;
+      border-radius:5px;
+    }
+
+    footer{
+      background:#222;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:20px;
+    }
+
+    mark{
+      background:yellow;
+    }
+
+    code{
+      background:#ddd;
+      padding:2px 5px;
+      border-radius:4px;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Git Command Quiz App</h1>
-    <p class="subtitle">Learn common Git commands with quizzes</p>
 
-    
+  <header>
+    <h1>Semantic HTML Website</h1>
+    <p>Learning HTML sectioning and content tags</p>
+  </header>
 
-    <div class="command-grid" id="commandGrid"></div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Articles</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-    <div class="quiz-section">
-      <h2 style="margin-bottom:20px; color:#1f3c88;">Quick Git Quiz</h2>
-      <div class="quiz-question" id="question"></div>
-      <div class="quiz-options" id="options"></div>
-      <div class="score" id="score"></div>
-    </div>
-  </div>
+  <main>
 
-  <script src="script.js"> </script>
+    <article>
+
+      <section>
+        <h2>About Semantic HTML</h2>
+
+        <p>
+          Semantic HTML gives meaning to web page structure.
+          It improves <strong>accessibility</strong> and SEO.
+        </p>
+
+        <p>
+          You can use tags like
+          <code>&lt;header&gt;</code>,
+          <code>&lt;article&gt;</code>,
+          and <code>&lt;footer&gt;</code>.
+        </p>
+
+        <blockquote>
+          "Good HTML structure makes websites easier to understand."
+        </blockquote>
+      </section>
+
+      <section>
+        <h2>Programming Languages</h2>
+
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+
+        <ol>
+          <li>Learn HTML</li>
+          <li>Practice CSS</li>
+          <li>Build Projects</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Image Example</h2>
+
+        <figure>
+          <img src="https://picsum.photos/700/300" alt="Random image">
+          <figcaption>A sample image using figure tag</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Student Table</h2>
+
+        <table>
+          <caption>Student Information</caption>
+
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Skill</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Nayeem</td>
+              <td>22</td>
+              <td>JavaScript</td>
+            </tr>
+
+            <tr>
+              <td>Rahim</td>
+              <td>20</td>
+              <td>HTML</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="3">End of Table</td>
+            </tr>
+          </tfoot>
+
+        </table>
+      </section>
+
+      <section>
+        <h2>Extra Semantic Tags</h2>
+
+        <p>
+          Today is <time datetime="2026-05-16">May 16, 2026</time>.
+        </p>
+
+        <p>
+          Water formula is H<sub>2</sub>O
+          and 5<sup>2</sup> = 25
+        </p>
+
+        <p>
+          <mark>Highlighted text</mark> example.
+        </p>
+
+        <p>
+          <abbr title="HyperText Markup Language">HTML</abbr>
+          is the structure language of web pages.
+        </p>
+
+        <details>
+          <summary>Click to read more</summary>
+
+          <p>
+            Semantic tags help developers write cleaner and more meaningful code.
+          </p>
+        </details>
+
+      </section>
+
+    </article>
+
+    <aside>
+      <h3>Sidebar</h3>
+
+      <p>
+        This is an <em>aside</em> section containing extra information.
+      </p>
+
+      <hr>
+
+      <p>
+        Learn more about
+        <cite>Web Development</cite>.
+      </p>
+
+      <small>Small text example</small>
+    </aside>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Semantic HTML Practice Page</p>
+  </footer>
+
 </body>
 </html>
